@@ -12,9 +12,12 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
+                    <x-app-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                       <i class="fas fa-home fa-fw mr-3"></i> {{ __('Dashboard') }}
+                    </x-app-nav-link>
+                    <x-app-nav-link :href="route('users')" :active="request()->routeIs('users')">
+                       <i class="fas fa-users fa-fw mr-3"></i> {{ __('Users') }}
+                    </x-app-nav-link>
                 </div>
             </div>
 
